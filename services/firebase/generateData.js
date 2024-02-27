@@ -10,10 +10,11 @@ export default function generateData() {
   // const scanID = `scan_${scanCounter < 10 ? "0" : ""}${scanCounter}`;
   // scanCounter++;
 
+
   const currentDate = new Date();
-  const options = { timeZone: 'Asia/Manila' };
-  currentDate.toLocaleString('en-US', options);
-  
+  const options = { timeZone: "Asia/Manila" };
+  currentDate.toLocaleString("en-US", options);
+
   const day = currentDate.getDate().toString().padStart(2, "0");
   const month = (currentDate.getMonth() + 1).toString().padStart(2, "0");
   const year = currentDate.getFullYear();
